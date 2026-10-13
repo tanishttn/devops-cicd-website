@@ -1,0 +1,9 @@
+{
+  "name": "devops-cicd-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node test.js",
+    "build": "node -e \"require('fs').mkdirSync('dist', {recursive:true}); for (const f of ['index.html','style.css','script.js']) require('fs').copyFileSync(f, 'dist/' + f)\""
+  }
+}
